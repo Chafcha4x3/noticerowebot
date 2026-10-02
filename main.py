@@ -10,7 +10,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import Command, CommandStart
 from aiogram.types import Message
 
-TOKEN = '8744257061:AAH13h8QQY58xzPpvffYcZ__50CYuijRzn4'
+TOKEN = os.getenv("BOT_TOKEN")
 DATABASE_PATH = os.getenv("REMINDERS_DB", "reminders.sqlite3")
 UTC = timezone.utc
 CHECK_INTERVAL_SECONDS = 15
